@@ -8,7 +8,6 @@ public class Main {
 		remote r = new remote();
 		r.setB1(b1);
 		r.setB2(b2);
-		r.turnon();
 		System.out.println(r.getstatus());
 	}
 }
