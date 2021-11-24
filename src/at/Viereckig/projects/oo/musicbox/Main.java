@@ -1,8 +1,23 @@
 package at.Viereckig.projects.oo.musicbox;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 	public static void main(String[] args) {
+	
+	}
+	
+	public static List<Record> getRecords(){
+		Title t1 = new Title("Love",300);
+		Title t2 = new Title("Love",300);
+		Title t3 = new Title("Love",300);
+	
+	
+		//Record rec = new Record("Ages");
+		//rec.addTitle(t1)
 		
+		return new ArrayList<Record>();
 	}
 }
 
