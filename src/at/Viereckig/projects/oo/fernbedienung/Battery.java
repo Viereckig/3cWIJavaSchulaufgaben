@@ -1,4 +1,4 @@
-package at.Viereckig.projects.oo.Fernbedienung;
+package at.Viereckig.projects.oo.fernbedienung;
 
 public class Battery {
 	private int chargingstatus;

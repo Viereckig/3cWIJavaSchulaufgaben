@@ -1,7 +1,9 @@
-package at.Viereckig.projects.oo.Musicbox;
+package at.Viereckig.projects.oo.musicbox;
 
 public class Main {
-	
+	public static void main(String[] args) {
+		
+	}
 }
 
 
