@@ -6,18 +6,9 @@ import java.util.List;
 public class Main {
 	public static void main(String[] args) {
 	
-		
-		getRecords();
-		
-		
-		
-		
-	}
-	
-	public static List<Record> getRecords(){
 		Title t1 = new Title("Love",300);
-		Title t2 = new Title("Love",4040);
-		Title t3 = new Title("Love",301230);
+		Title t2 = new Title("Break",4040);
+		Title t3 = new Title("Toxic",301230);
 		Title t4 = new Title("Love",323400);
 		Title t5 = new Title("Love",567300);
 		Title t6 = new Title("Love",90300);
@@ -28,10 +19,15 @@ public class Main {
 	
 		Record rec1 = new Record("Ages of love");
 		rec1.addTitle(t1);
-		System.out.println(rec1.getTitels());
+		rec1.addTitle(t2);
+		rec1.addTitle(t3);
 		
-		return new ArrayList<Record>();
+		
+		System.out.println(rec1.getTitels(1));
+		
+		
 	}
+	
 }
 
 
