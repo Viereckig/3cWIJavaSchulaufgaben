@@ -3,11 +3,11 @@ package at.Viereckig.projects.oo.musicbox;
 import java.util.ArrayList;
 
 public class Record {
-	ArrayList<Title> titles = new ArrayList<Title>();
+	ArrayList<Title> titles;
 	private String name;
 	
 	public Record(String name) {
-		this.name = name;
+		this.titles =  new ArrayList<>();
 	}
 	
 	
@@ -20,14 +20,13 @@ public class Record {
 	public String getTitels(int titelnummber) {
 		Title test = titles.get(titelnummber);
 		return test.getName();
+	}
 	
+	public String getRecord(Title title) {
 		
+		return name;
 	}
 	
-	
-	public void setName(String name) {
-		this.name = name;
-	}
 	
 	
 }

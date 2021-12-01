@@ -5,7 +5,12 @@ import java.util.List;
 
 public class Main {
 	public static void main(String[] args) {
-	
+		Magazin magazine = new Magazin();
+		
+		Record rec1 = new Record("Ages of love");
+		Record rec2 = new Record("Strengh");
+		Record rec3 = new Record("james");
+		
 		Title t1 = new Title("Love",300);
 		Title t2 = new Title("Break",4040);
 		Title t3 = new Title("Toxic",301230);
@@ -17,14 +22,27 @@ public class Main {
 		Title t9 = new Title("Love",5300);
 	
 	
-		Record rec1 = new Record("Ages of love");
+		
 		rec1.addTitle(t1);
 		rec1.addTitle(t2);
 		rec1.addTitle(t3);
 		
+		rec2.addTitle(t4);
+		rec2.addTitle(t5);
+		rec2.addTitle(t6);
+		
+		rec3.addTitle(t7);
+		rec3.addTitle(t8);
+		rec3.addTitle(t9);
+		
+		
+		magazine.addRecords(rec1);
+		magazine.addRecords(rec2);
+		magazine.addRecords(rec3);
+		
 		
 		System.out.println(rec1.getTitels(1));
-		
+		System.out.println(getRecord());
 		
 	}
 	
