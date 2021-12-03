@@ -28,11 +28,18 @@ public class Record {
 	}
 	
 	public int getSumOfMusic() {
-		
-		
-		return name;
+		int sum = 0;
+		for (int i = 0; i < titles.size();i++) {
+			
+			sum = sum + titles.get(i).getDuration();
+		}
+		return sum;
 	}
-	
-	
-	
+
+
+
+	private int size(ArrayList<Title> titles2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }

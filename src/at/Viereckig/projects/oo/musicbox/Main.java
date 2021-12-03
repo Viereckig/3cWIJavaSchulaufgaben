@@ -11,9 +11,9 @@ public class Main {
 		Record rec2 = new Record("Strengh");
 		Record rec3 = new Record("james");
 		
-		Title t1 = new Title("Love",300);
-		Title t2 = new Title("Break",4040);
-		Title t3 = new Title("Toxic",301230);
+		Title t1 = new Title("Love",1);
+		Title t2 = new Title("Break",5);
+		Title t3 = new Title("Toxic",10);
 		Title t4 = new Title("Love",323400);
 		Title t5 = new Title("Love",567300);
 		Title t6 = new Title("Love",90300);
@@ -42,7 +42,7 @@ public class Main {
 		
 		
 		System.out.println(rec1.getTitels(2));
-		
+		System.out.println(rec1.getSumOfMusic());
 	}
 	
 }
