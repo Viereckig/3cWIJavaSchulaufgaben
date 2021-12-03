@@ -27,6 +27,12 @@ public class Record {
 		return name;
 	}
 	
+	public int getSumOfMusic() {
+		
+		
+		return name;
+	}
+	
 	
 	
 }

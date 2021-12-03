@@ -41,8 +41,7 @@ public class Main {
 		magazine.addRecords(rec3);
 		
 		
-		System.out.println(rec1.getTitels(1));
-		System.out.println(getRecord());
+		System.out.println(rec1.getTitels(2));
 		
 	}
 	
