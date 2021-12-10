@@ -41,7 +41,7 @@ public class Main {
 		magazine.addRecords(rec3);
 		
 		
-		List<Record> foundTitle = magazine.findrecord("Break");
+		List<Record> foundTitle = magazine.findrecord("Love");
 		for (Record record : foundTitle) {
 			System.out.println(record.getName());
 		}

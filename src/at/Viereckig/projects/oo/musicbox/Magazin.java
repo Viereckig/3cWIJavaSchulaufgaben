@@ -24,9 +24,12 @@ public class Magazin {
 		List<Record> foundTitle = new ArrayList<>();
 		
 		for (Record record : records) {
-			if(record.getName().contains(name)) {
-				foundTitle.add(record);
+			for (Title title :record.getAllTitles()) {
+				if (title.getName().contains(name)) {
+					foundTitle.add(record);
+				}
 			}
+			
 		}
 		
 		return foundTitle;

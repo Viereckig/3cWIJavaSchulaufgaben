@@ -3,17 +3,22 @@ package at.Viereckig.projects.oo.musicbox;
 import java.util.ArrayList;
 
 public class Record {
-	ArrayList<Title> titles;
+	ArrayList<Title> titles = new ArrayList();
 	private String name;
 	
 	public Record(String name) {
 		this.name = name;
+		
 	}
 	
 	
 	
 	public void addTitle(Title titles) {
 		this.titles.add(titles);
+	}
+	
+	public ArrayList<Title> getAllTitles(){
+		return this.titles;
 	}
 	
 	
