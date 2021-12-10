@@ -41,8 +41,16 @@ public class Main {
 		magazine.addRecords(rec3);
 		
 		
+		List<Record> foundTitle = magazine.findrecord("Break");
+		for (Record record : foundTitle) {
+			System.out.println(record.getName());
+		}
+		
+		
 		System.out.println(rec1.getTitels(2));
-		System.out.println(rec1.getSumOfMusic());
+		
+		
+
 	}
 	
 }

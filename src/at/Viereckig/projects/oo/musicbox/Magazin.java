@@ -20,4 +20,16 @@ public class Magazin {
 		this.records.remove(record);
 	}
 	
+	public List<Record> findrecord(String name) {
+		List<Record> foundTitle = new ArrayList<>();
+		
+		for (Record record : records) {
+			if(record.getName().contains(name)) {
+				foundTitle.add(record);
+			}
+		}
+		
+		return foundTitle;
+	}
+	
 }

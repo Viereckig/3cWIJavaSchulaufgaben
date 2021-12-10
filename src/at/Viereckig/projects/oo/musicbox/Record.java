@@ -7,7 +7,7 @@ public class Record {
 	private String name;
 	
 	public Record(String name) {
-		this.titles =  new ArrayList<>();
+		this.name = name;
 	}
 	
 	
@@ -35,11 +35,8 @@ public class Record {
 		}
 		return sum;
 	}
-
-
-
-	private int size(ArrayList<Title> titles2) {
-		// TODO Auto-generated method stub
-		return 0;
+	
+	public String getName() {
+		return name;
 	}
 }
