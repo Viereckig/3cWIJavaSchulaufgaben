@@ -43,7 +43,7 @@ public class Main {
 		magazine.addRecords(rec3);
 		
 		
-		
+		Box box = new Box();
 		
 		List<Record> foundTitle = magazine.findrecord("Break");
 		for (Record record : foundTitle) {

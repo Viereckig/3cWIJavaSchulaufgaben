@@ -36,7 +36,17 @@ public class Magazin {
 	}
 	
 	public void loadRecord(Record record) {
-		this.recordin = record;
+		if(this.recordin == null)
+			this.recordin = record;
+		else
+			System.out.println("Bitte entfernen Sie zuerst die bereits eingelegte Platte!");
+	}
+	
+	public void unloadRecord(Record record) {
+		if(this.recordin == null)
+			System.out.println("Es ist keine Platte eingelegt");
+		else
+			this.recordin = null;
 	}
 	
 	
@@ -46,5 +56,6 @@ public class Magazin {
 			System.out.println("Es wird jetzt " + title.getName() + " abgespielt!");
 		} else
 			System.out.println("Es ist keine Platte eingelegt");
+		
 	}
 }
