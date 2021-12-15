@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Magazin {
 	private List<Record> records;
-	
+	private Record recordin = null;
 	
 	public Magazin() {
 		this.records = new ArrayList<>();
@@ -35,4 +35,16 @@ public class Magazin {
 		return foundTitle;
 	}
 	
+	public void loadRecord(Record record) {
+		this.recordin = record;
+	}
+	
+	
+	public void play(int nr) {
+		if (this.recordin != null) {
+			Title title = this.recordin.getAllTitles().get(nr);
+			System.out.println("Es wird jetzt " + title.getName() + " abgespielt!");
+		} else
+			System.out.println("Es ist keine Platte eingelegt");
+	}
 }
