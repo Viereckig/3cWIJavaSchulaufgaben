@@ -32,7 +32,7 @@ public class Record {
 		return name;
 	}
 	
-	public int getSumOfMusic() {
+	public int getSumOfRecord() {
 		int sum = 0;
 		for (int i = 0; i < titles.size();i++) {
 			

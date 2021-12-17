@@ -15,11 +15,15 @@ public class Magazin {
 		this.records.add(record);
 	}
 	
-	
+
 	public void removeRecord(Record record) {
 		this.records.remove(record);
 	}
 	
+	public List<Record> getRecords() {
+		return records;
+	}
+
 	public List<Record> findrecord(String name) {
 		List<Record> foundTitle = new ArrayList<>();
 		
@@ -36,10 +40,7 @@ public class Magazin {
 	}
 	
 	public void loadRecord(Record record) {
-		if(this.recordin == null)
-			this.recordin = record;
-		else
-			System.out.println("Bitte entfernen Sie zuerst die bereits eingelegte Platte!");
+		this.recordin = record;
 	}
 	
 	public void unloadRecord(Record record) {
@@ -58,4 +59,5 @@ public class Magazin {
 			System.out.println("Es ist keine Platte eingelegt");
 		
 	}
+	
 }
