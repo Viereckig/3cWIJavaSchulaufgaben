@@ -40,10 +40,13 @@ public class Magazin {
 	}
 	
 	public void loadRecord(Record record) {
-		this.recordin = record;
+		if(this.recordin == null)
+			this.recordin = record;
+		else
+			System.out.println("Sie müssen zuerst die aktuelle Platte Auswerfen!");
 	}
 	
-	public void unloadRecord(Record record) {
+	public void unloadRecord() {
 		if(this.recordin == null)
 			System.out.println("Es ist keine Platte eingelegt");
 		else
@@ -51,6 +54,14 @@ public class Magazin {
 	}
 	
 	
+	public Record getRecordin() {
+		return recordin;
+	}
+
+	public void setRecordin(Record recordin) {
+		this.recordin = recordin;
+	}
+
 	public void play(int nr) {
 		if (this.recordin != null) {
 			Title title = this.recordin.getAllTitles().get(nr);

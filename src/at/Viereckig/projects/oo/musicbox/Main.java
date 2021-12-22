@@ -5,11 +5,10 @@ public class Main {
 	public static void main(String[] args) {
 		Box box = new Box();
 		box = BoxFiller.fillBox(box);
-		BoxGUI boxGUI = new BoxGUI(box);
-		boxGUI.run();
-		
-
-
+		//BoxGUI boxGUI = new BoxGUI(box);
+		//boxGUI.run();
+		BoxRealGUI boxRealGUI = new BoxRealGUI(box);
+		boxRealGUI.boxrealgui();
 	}
 	
 }
