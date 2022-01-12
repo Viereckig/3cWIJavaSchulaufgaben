@@ -33,9 +33,6 @@ public class Kamera {
 	
 	
 	
-	
-	
-	
 	public Hersteller getHersteller() {
 		return hersteller;
 	}

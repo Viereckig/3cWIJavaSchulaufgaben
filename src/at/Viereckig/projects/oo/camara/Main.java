@@ -1,5 +1,7 @@
 package at.Viereckig.projects.oo.camara;
 
+import java.time.LocalDateTime;
+
 public class Main {
 	public static void main(String[] args) {
 		Kamera camara = new Kamera(100000, 500, "green", "klein");
@@ -15,8 +17,9 @@ public class Main {
 		
 		camara.setObjektiv(o1);
 		camara.setHersteller(h1);
+
 		
-		
+		System.out.println(LocalDateTime.now().toString());
 	}
 }
 
