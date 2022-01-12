@@ -2,6 +2,18 @@ package at.Viereckig.projects.oo.camara;
 
 public class Main {
 	public static void main(String[] args) {
+		Kamera camara = new Kamera(100000, 500, "green", "klein");
+		
+		
+		Hersteller h1 = new Hersteller("Sony", "Japan");
+		Hersteller h2 = new Hersteller("Canon", "China");
+		Hersteller h3 = new Hersteller("Tameron", "Japan");
+		
+		Objektiv o1 = new Objektiv(300, h3);
+		Objektiv o2 = new Objektiv(500, h3);
+		Objektiv o3 = new Objektiv(100, h3);
+		
+		camara.setHersteller(h1);
 		
 		
 		
