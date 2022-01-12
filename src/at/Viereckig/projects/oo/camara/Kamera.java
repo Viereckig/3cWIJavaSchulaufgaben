@@ -6,8 +6,8 @@ import at.Viereckig.projects.oo.musicbox.Title;
 
 public class Kamera {
 	private Hersteller hersteller;
-	
-	
+	private Objektiv objektiv;
+	private SdKarte sdcard;
 	private int pixel;
 	private int weight;
 	private String color;
@@ -43,6 +43,16 @@ public class Kamera {
 
 	public void setHersteller(Hersteller hersteller) {
 		this.hersteller = hersteller;
+	}
+
+
+
+	public Objektiv getObjektiv() {
+		return objektiv;
+	}
+
+	public void setObjektiv(Objektiv objektiv) {
+		this.objektiv = objektiv;
 	}
 
 
@@ -89,6 +99,7 @@ public class Kamera {
 		else
 			System.out.println("Dies ist eine Ungültige eingabe Bitte verwenden Sie klein, mittel oder groß!");
 	}
+
 	
 	
 	
