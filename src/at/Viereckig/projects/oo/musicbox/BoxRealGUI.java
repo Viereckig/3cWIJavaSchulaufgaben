@@ -53,7 +53,7 @@ public class BoxRealGUI extends JFrame implements ActionListener{
 	    panel.add(lbl);
 	    
 
-	    String[] choices = { "Aktions auswahl", "Zeigt alle Platten", "Legt Platte ein", "Wirft Platte wieder aus", "Suche Record mit Titel",
+	    String[] choices = {"Aktions auswahl", "Zeigt alle Platten", "Legt Platte ein", "Wirft Platte wieder aus", "Suche Record mit Titel",
 	                         "spiele Titel ab", "zeigt aktuell eingelegte Platte", "zeigt summe aller Titel" };
 
 	    cb = new JComboBox(choices);

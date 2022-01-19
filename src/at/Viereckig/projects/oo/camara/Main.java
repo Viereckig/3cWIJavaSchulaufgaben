@@ -3,9 +3,15 @@ package at.Viereckig.projects.oo.camara;
 import java.time.LocalDateTime;
 
 public class Main {
+
 	public static void main(String[] args) {
+		
 		Kamera camara = new Kamera(100000, 500, "green", "klein");
 		SdKarte sd1 = new SdKarte(16);
+		
+		GUI gui = new GUI(camara);
+		
+		
 		
 		Hersteller h1 = new Hersteller("Sony", "Japan");
 		Hersteller h2 = new Hersteller("Canon", "China");
@@ -15,12 +21,22 @@ public class Main {
 		Objektiv o2 = new Objektiv(500, h3);
 		Objektiv o3 = new Objektiv(100, h3);
 		
+		
+		
+		
+		
+		
 		camara.setObjektiv(o1);
 		camara.setHersteller(h1);
-
+		camara.setSdcard(sd1);
 		
-		System.out.println(LocalDateTime.now().toString());
+		
+		gui.run();
+		
 	}
+	
+	
+	
 }
 
 /*

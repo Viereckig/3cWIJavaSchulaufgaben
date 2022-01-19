@@ -8,6 +8,8 @@ public class SdKarte {
 	private int capacy;
 	ArrayList<Fotos> fotos = new ArrayList();
 	
+	
+	
 	public SdKarte(int capacy) {
 		this.capacy = capacy;
 	}
@@ -16,17 +18,21 @@ public class SdKarte {
 		return capacy;
 	}
 
-	public void setCapacy(int capacy) {
-		this.capacy = capacy;
-	}
-
 	public ArrayList<Fotos> getFotos() {
 		return fotos;
 	}
 
-	public void addFotos(Fotos fotos) {
-		this.fotos.add(fotos);
+	public void addFotos(Fotos foto) {
+		this.fotos.add(foto);
 	}
 	
-	
+	public int checkcapacy() {
+		int freecapacy = 0;
+
+		for(int i = 0; i <= fotos.size()-1;i++) {
+			freecapacy = freecapacy + fotos.get(i).getSize();
+		}
+
+		return freecapacy;
+	}
 }
