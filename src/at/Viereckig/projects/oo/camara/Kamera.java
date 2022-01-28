@@ -5,8 +5,7 @@ import java.util.ArrayList;
 import at.Viereckig.projects.oo.musicbox.Title;
 
 public class Kamera {
-	private Kamera camara;
-	
+
 	
 	
 	private Hersteller hersteller;
