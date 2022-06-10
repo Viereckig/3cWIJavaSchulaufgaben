@@ -10,17 +10,17 @@ public class Lamp {
 		this.GlowElements = new ArrayList<>();
 	}
 	
-	public void addglowelement(GlowElements element) {
+	public void addGlowElement(GlowElements element) {
 		this.GlowElements.add(element);
 	}
 	
-	public void turnallOn() {
+	public void turnAllOn() {
 		for (int i = 0; i < this.GlowElements.size(); i++) {
 			this.GlowElements.get(i).turnon();
 		}
 	}
 	
-	public void turnallOff() {
+	public void turnAllOff() {
 		for (int i = 0; i < this.GlowElements.size(); i++) {
 			this.GlowElements.get(i).turnoff();
 		}

@@ -13,14 +13,14 @@ public class GUI {
 		GlowElements glow1 = new GlowElements("LED 1", "Grün");
 		GlowElements glow2 = new GlowElements("LED 2", "Gelb");
 		GlowElements glow3 = new GlowElements("LED speziell", "Rot");
-		lamp.addglowelement(glow1);
-		lamp.addglowelement(glow2);
-		lamp.addglowelement(glow3);
+		lamp.addGlowElement(glow1);
+		lamp.addGlowElement(glow2);
+		lamp.addGlowElement(glow3);
 		
-		lamp.turnallOn();
-		lamp.turnallOff();
-		lamp.turnallOn();
-		lamp.turnallOn();
+		lamp.turnAllOn();
+		lamp.turnAllOff();
+		lamp.turnAllOn();
+		lamp.turnAllOn();
 		
 		System.out.println(lamp.getOverallPowerUsage());
 		
